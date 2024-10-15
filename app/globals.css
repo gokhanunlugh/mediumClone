@@ -40,3 +40,15 @@ a {
     color-scheme: dark;
   }
 }
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconSearch{
+  display: flex;
+  gap: 10px;
+}
