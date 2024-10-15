@@ -1,7 +1,13 @@
+"use client"
 import Link from "next/link"
+import { usePathname  } from "next/navigation"
 
 
 export default function Header() {
+  const pathname = usePathname();
+  
+  
+  
 
   return (
     <header>
@@ -10,7 +16,7 @@ export default function Header() {
         <input type="text" name="search" id="" />
       </div>
       <div className="user">
-        <Link href={'/new-story'}>Write</Link>
+        {pathname === '/new-story' ? <button type="submit" form="draft">Publish</button> : <Link href={'/new-story'}>Write</Link>}
       </div>
     </header>
   )
