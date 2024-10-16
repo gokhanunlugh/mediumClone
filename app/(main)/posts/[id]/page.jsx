@@ -34,7 +34,7 @@ export default async function PostDetailsPage({params}){
 
       <div className="comments">
           {!comments ? null : (
-            comments.map(x=> (
+            comments.reverse().map(x=> (
               <div className="comment" key={x.id}>
                 <p>{x.content}</p>
               </div>
