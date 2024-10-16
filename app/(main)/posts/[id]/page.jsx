@@ -7,9 +7,9 @@ import PostComment from "./action";
 export default async function PostDetailsPage({params}){
   const supabase = createClient();
   const {data, error} = await supabase.from('posts').select().eq('id', params.id).single();
-  const {dataC, errorC } = await supabase.from('comments').select('*');
+  const {data:comments } = await supabase.from('comments').select('*').eq('post_id', params.id);
 
-  console.log(dataC);
+  console.log(comments);
   
 
   if(!data) return notFound();
@@ -33,8 +33,8 @@ export default async function PostDetailsPage({params}){
       </div>
 
       <div className="comments">
-          {!dataC ? null : (
-            dataC.map(x=> (
+          {!comments ? null : (
+            comments.map(x=> (
               <div className="comment" key={x.id}>
                 <p>{x.content}</p>
               </div>
