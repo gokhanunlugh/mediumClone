@@ -1,5 +1,6 @@
 import { createClient } from "@/utils/supabase/server";
 import PostComment from "./action";
+import CommentLikesCounter from "../comment-like-counter/page";
 
 
 export default async function Comments({params}) {
@@ -22,6 +23,7 @@ export default async function Comments({params}) {
           data.map(x => (
             <div className="comment" key={x.id}>
               <p>{x.content}</p>
+              <CommentLikesCounter params={params} />
             </div>
           ))
         )}
