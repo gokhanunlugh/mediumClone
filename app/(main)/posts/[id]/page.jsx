@@ -1,6 +1,7 @@
 import { createClient } from "@/utils/supabase/server";
 import { notFound } from "next/navigation";
 import Comments from "@/components/comments/page";
+import Likes from "@/components/likes/page";
 
 
 
@@ -18,7 +19,7 @@ export default async function PostDetailsPage({ params }) {
   return (
     <>
       <div className="post">
-        <h1>{data.title}</h1>
+        <h1>{data.title} <Likes params={params}/></h1>
         <p>{data.content}</p>
       </div>
 

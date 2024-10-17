@@ -5,7 +5,6 @@ import PostComment from "./action";
 export default async function Comments({params}) {
   const supabase = createClient();
   const { data, error } = await supabase.from('comments').select('*').eq('post_id', params.id);
-  console.log(data);
   
 
   return (
