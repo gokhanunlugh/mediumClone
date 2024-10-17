@@ -26,7 +26,7 @@ export default async function Comments({params}) {
             <div className="comment" key={x.id}>
               <p>{x.content}</p>
               <CommentLikes params={params} commentId={x.id} />
-              <CommentLikesCounter params={params} commentId={x.id} />
+              <CommentLikesCounter  commentId={x.id} />
             </div>
           ))
         )}
