@@ -25,6 +25,20 @@ export default function Home() {
       </div>
       <img src="../img/bg.png" width={460} height={600} alt="" />
     </div>
+    <hr className="border fBorder" />
+    <footer>
+      <Link href={'/'} >Help</Link>
+      <Link href={'/'} >Status</Link>
+      <Link href={'/'} >About</Link>
+      <Link href={'/'} >Careers</Link>
+      <Link href={'/'} >Press</Link>
+      <Link href={'/'} >Blog</Link>
+      <Link href={'/'} >Privacy</Link>
+      <Link href={'/'} >Terms</Link>
+      <Link href={'/'} >Text to speech</Link>
+      <Link href={'/'} >Teams</Link>
+
+    </footer>
     </>
   );
 }

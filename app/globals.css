@@ -48,6 +48,7 @@ a {
   height: 1px;
   border: none;
   border-bottom: 1px solid black;
+  margin-bottom: 100px;
 }
 
 .navbar {
@@ -73,13 +74,12 @@ a {
   width: 1220px;
   margin: 0 auto;
   justify-content: space-between;
+  margin-bottom: 60px;
 }
 
 .container img{
   margin-right: -350px;
-  margin-top: -15px;
-  position: relative;
-  z-index: -1;
+
 }
 
 
@@ -108,4 +108,21 @@ h3 {
   color: white;
   border-radius: 99em;
   border: none;
+  width: 196px;
+}
+
+.fBorder {
+  margin-bottom: 0;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding-block: 24px;
+  gap: 16px;
+}
+
+footer a {
+  font-family: serif;
+  color: rgba(0, 0, 0, 0.6);
 }
