@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Home() {
 
-  
+
   
   return (
     <>
@@ -12,7 +12,7 @@ export default function Home() {
           <Link href={'/'} >Our Story</Link>
           <Link href={'/'} >Membership</Link>
           <Link href={'/'} >Write</Link>
-          <Link href={'/login'} >Sign in</Link>
+          <Link href={'/sign'} >Sign in</Link>
           <Link className="bg-button" href={'/'} >Get started</Link>
         </div>
       </div>
