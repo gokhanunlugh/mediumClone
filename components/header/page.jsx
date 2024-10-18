@@ -1,5 +1,5 @@
 import Link from "next/link"
-import pathname from "../path/page"
+// import pathname from "../path/page"
 
 export default  function Header() {
   

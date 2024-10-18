@@ -1,11 +1,11 @@
-"use client"
-import { usePathname  } from "next/navigation"
+// "use client"
+// import { usePathname  } from "next/navigation"
 
 
 
-export default function pathname(){
-  const pathname = usePathname();
+// export default function pathname(){
+//   const pathname = usePathname();
   
   
-  return pathname
-}
+//   return pathname
+// }
